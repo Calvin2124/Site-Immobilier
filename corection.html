@@ -14,21 +14,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Le titre du document ? -->
     <title>Fonciere Pagerie Malmaison</title>
 </head>
 <body>
     <header>
-        <a href="#"><img src="img/cropped-logo-fpm.jpg.png" alt="Logo du site"></a>
-        <nav>
-            <ul>
-                <li><a class="a-hover" href="#">Rueil Malmaison</a></li>
-                <li><a class="a-hover" href="#">Bureaux à Meaux</a></li>
-                <li><a class="a-hover" href="#">Bureaux à louer</a></li>
-                <li><a class="a-hover" href="#">Galerie</a></li>
-                <li><a class="a-hover" href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <i id="burger-menu" class="fa-solid fa-bars"></i>
+        <!-- non pas besoin de div dans ton header -->
+        <div class="content-width-1440px">
+            <a href="#"><img src="img/cropped-logo-fpm.jpg.png" alt="Logo du site"></a>
+            <nav>
+                <ul>
+                    <li><a class="a-hover" href="#">Rueil Malmaison</a></li>
+                    <li><a class="a-hover" href="#">Bureaux à Meaux</a></li>
+                    <li><a class="a-hover" href="#">Bureaux à louer</a></li>
+                    <li><a class="a-hover" href="#">Galerie</a></li>
+                    <li><a class="a-hover" href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <i id="burger-menu" class="fa-solid fa-bars"></i>
+        </div>
     </header>
     <main>
         
@@ -51,7 +55,8 @@
         <section id="section-2">
             <div class="content-width-1440px">
                 <article>
-                    <h2>Rueil Malmaison</h2>
+                    <!-- h2 et h3. Reuil Malmaison est un titrage -->
+                    <p>Rueil Malmaison
                     <h3 class="h2-black">Location de bureaux
                         professionnels</h2>
                         <div class="para-section-2">
@@ -72,6 +77,7 @@
                 </article>
                 <img src="/img/section 2.jpeg" alt="Photo des locaux">
             </div>
+            <!-- 3 articles plutot que article > div * 3 -->
                 <div class="article-icon">
                     <article class="div-icon">
                         <i class="fa-solid icon-section2 fa-business-time"></i>
@@ -94,13 +100,14 @@
         <section id="section-3">
             <div class="content-width-1440px">
                 <article id="section3-article1">
-                    <img src="img/section 3 1.jpeg" alt="Photo de l'immeuble vue de la rue">
-                    <img src="img/section 3 2.jpeg" alt="Photo de l'immeuble vue de la rue">
-                    <img src="img/section 3 3.jpeg" alt="Salon de l'appartement">
-                    <img src="img/section 3 4.jpeg" alt="Cuisine de l'appartement">
-                    <img src="img/section 3 5.jpeg" alt="Terrasse de l'appartement">
+                    <!-- Les alt = ? Ils puent des pieds ? -->
+                    <img src="img/section 3 1.jpeg" alt="">
+                    <img src="img/section 3 3.jpeg" alt="">
+                    <img src="img/section 3 4.jpeg" alt="">
+                    <img src="img/section 3 5.jpeg" alt="">
                 </article>
                 <article id="section3-article2">
+                    <!-- Idem qu'en haut -->
                     <h2>Bureaux à Meaux</h2>
                     <h3 class="h2-white">Location de bureaux professionnels</h3>
                     <div class="para-section3">
@@ -128,51 +135,67 @@
         <!-- section 4 -->
 
         <section id="section-4">
+            <!-- Pas besoin de la div -->
+            <div class="content-width-1440px">
                 <article class="section4-article1">
-                    <h2>Nos bureaux à louer</h2>
-                    <h3 class="h2-black">Rueil Malmaison et Meaux</h3>
+                    <p>Nos bureaux à louer</p>
+                    <h2 class="h2-black">Rueil Malmaison et Meaux</h2>
                 </article>
+
+                <!-- pour les bureaux a louer fait plutot une div qui contient 3 articles. Les vignettes sont cliquables dans leur intégralité (regarde sur le site original) -->
                 <div class="section4-article2">
-                    <article>
-                        <a href="#"><img src="img/section 4 1.jpeg" alt=""></a>
-                            <a href="#"><p>Bureaux 116+117 26.5m²</p></a>
-                    </article>
-                    <article>
-                        <a href="#"><img src="img/section 4 2.jpeg" alt=""></a>
-                            <a href="#"><p>Lot 112 : 67 m2</p></a>
-                    </article>
-                    <article>
-                        <a href="#"><img src="img/section 4 3.jpeg" alt=""></a>
-                            <a href="#"><p>Lot C : 184 m2</p></a>
-                    </article>
+                    <div>
+                        <img src="img/section 4 1.jpeg" alt="">
+                        <p>Bureaux 116+117 26.5m²</p>
+                    </div>
+                    <div>
+                        <img src="img/section 4 2.jpeg" alt="">
+                        <p>Lot 112 : 67 m2</p>
+                    </div>
+                    <div>
+                        <img src="img/section 4 3.jpeg" alt="">
+                        <p>Lot C : 184 m2</p>
+                    </div>
                     <a class="btn-blue" href="#">Voir tout les bureaux</a>
-                </div>
+                </article>
+            </div>
         </section>
         
         <!-- section 5 -->
         
         <section id="section-5">
             <div class="content-width-1440px">
-                <h2>Nous contacter</h2>
-                <h3 class="h2-white">Pour une question ou une visite</h3>
-                <form action="">
-                    <input class="column-1" type="text" placeholder="Votre nom">
-                    <input class="column-1" type="text" placeholder="Votre prénom">
-                    <input id=""  class="column-2" type="text" placeholder="Votre entreprise">
-                    <input class="column-1" type="email" placeholder="Votre Email">
-                    <input class="column-1" type="tel" placeholder="Votre téléphone">
-                    <textarea class="column-2" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                    <label class="column-2" for="">
-                        <input type="checkbox">
-                        En remplissant ce formulaire, je consens à ce que les informations que j'ai fournies soient envoyées par e-mail exclusivement à Foncière Pagerie Malmaison, destinataire unique, dans le but d'être contacté au sujet de ma demande. Je suis conscient(e) que j'ai le droit de modifier, d'accéder et de supprimer mes informations personnelles.
-                    </label>
-                    <input type="submit" class="btn-blue column-1" placeholder="Envoyer">
-                </form>
+                <!-- La div oui, l'article non. Et pour les titrages même topo qu'au dessus ! -->
+                <article id="section5-article">
+                    <h2>Nous contacter</h2>
+                    <h3 class="h2-white">Pour une question ou une visite</h3>
+                    <form action="">
+                        <input class="column-1" type="text" placeholder="Votre nom">
+                        <input class="column-1" type="text" placeholder="Votre prénom">
+                        <input id=""  class="column-2" type="text" placeholder="Votre entreprise">
+                        <input class="column-1" type="email" placeholder="Votre Email">
+                        <!-- Pour le téléphone input type tel -->
+                        <input class="column-1" type="tel" placeholder="Votre téléphone">
+                        <textarea class="column-2" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        <label class="column-2" for="">
+                            <input type="checkbox">
+                            En remplissant ce formulaire, je consens à ce que les informations que j'ai fournies soient envoyées par e-mail exclusivement à Foncière Pagerie Malmaison, destinataire unique, dans le but d'être contacté au sujet de ma demande. Je suis conscient(e) que j'ai le droit de modifier, d'accéder et de supprimer mes informations personnelles.
+                        </label>
+                        <input type="submit" class="btn-blue column-1" placeholder="Envoyer">
+                    </form>
+                </article>
             </div>
         </section>
     </main>
     <footer>
-            <p>©2023 – Foncière Pagerie Malmaison – Création de site : <a href="#"> StoryCom </a>  – <a href="#"> Mentions légales</a></p>
+        <!-- La div est inutile, crée seulement un p et met des a là ou il y a des liens. Ce n'est pas pertinent d'entrecoupé comme ça -->
+
+            <p>©2023 – Foncière Pagerie Malmaison – Création de site : 
+            <a href="#"> StoryCom </a> 
+            –  
+            <a href="#"> Mentions légales</a>
+            </p>
+        </div>
     </footer>
 </body>
 </html>
